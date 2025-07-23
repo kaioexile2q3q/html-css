@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        /*Box-level*/
+        h1 {
+            /*display:inline para trasformar em inline, e assim vice versa como display;block*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            
+            
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgray;
+            /*Simplificando*/
+
+            border: 10px solid darkslategray;
+            
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*Padding da um pequeno espaço entre as bordas*/
+
+            /*Simplificando*/
+            padding: 10px 10px 10px 10px;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            /*Muda basicamente a margem da box*/
+            margin: auto; /*Centraliza no meio independente do navegador ou tela*/
+
+            /*Simplificando*/
+            margin: 10px 10px 10px 10px;
+
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+            /*Simplificando*/
+            outline: 10px dashed salmon;
+            /*In-line*/
+        }
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-16-aula-02-modelo-de-caixas-na-pratica/">links são exemplos de caixas in line-level,</a> vamos ver como tudo isso funciona</p>
+
+    
+</body>
+</html>
