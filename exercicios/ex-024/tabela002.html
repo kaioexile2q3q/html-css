@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;/*passo 1 para fixar cabeçalho*/
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1; /*Outros 2 passos para fixar*/
+            background-color: lightgray;
+        }
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+            /*De 2 em 2 vai uma tarja cinza*/
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Anatomia para tabelas grandes
+        caption
+        thead
+             tt, td, th
+          tbody
+              tr, td, th
+            tfoot
+              tr, td, th-->
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th style="width: 50px;">População</th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.689.344.23</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>18.345.35.24</td>
+
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>21.324.242.4</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14.453.35.354</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td>54.954.435.35</td>
+            </tr>
+
+        </tfoot>
+
+
+    </table>
+    
+</body>
+</html>
