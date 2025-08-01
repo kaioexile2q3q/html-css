@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de teste</title>
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .cnome {
+            background-color: greenyellow;
+        }
+        .csexo {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="idade">
+            <col class="csexo" span="2"> <!--span 2, vc muda automaticamente 2 colunas, no caso a do lado-->
+            <col class="cprofissão">
+        </colgroup>
+        <caption>Trabalho</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>19</td>
+            <td>F</td>
+            <th>Padeira</th>
+        </tr>
+        <tr>
+            <td>Marcelo</td>
+            <td>23</td>
+            <td>M</td>
+            <th>Pedreiro</th>
+        </tr>
+         <tr>
+            <td>Ana</td>
+            <td>17</td>
+            <td>F</td>
+            <th>Automomo</th>
+        </tr>
+         <tr>
+            <td>João</td>
+            <td>19</td>
+            <td>M</td>
+            <th>Contador</th>
+        </tr>
+         <tr>
+            <td>Paulo</td>
+            <td>23</td>
+            <td>M</td>
+            <th>Vendedor</th>
+        </tr>
+    </table>
+    
+    
+</body>
+</html>
