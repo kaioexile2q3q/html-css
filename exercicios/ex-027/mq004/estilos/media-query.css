@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/*Todas as demais mídias*/
+/*Typical Device Breakpoints
+Pequenas telas:até 600 px
+celular:de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes telas: acima de 1200 px
+*/
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url("../imagens/back-print.jpg");/*Desnecassário*/
+
+    
+    }
+    main {
+        border: 2px solid black;
+        width: 90%;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    main::after {
+        content: 'Essa impressão foi feita através do site kaio.com';
+        text-decoration: overline;
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #pc {display: none;}
+    #print {display: block;}
+    #tv {display: none;}
+
+    
+    
+}/*IMPRESSÃO*/
+
+@media screen and (min-width: 768px) and (max-width: 922px) {
+    body {
+        background-image: url("../imagens/back-tablet.jpg");
+        
+    }
+    #phone {display: none;}
+    #tablet {display: block;}
+    #pc {display: none;}
+    #print {display: none;}
+    #tv {display: none;}
+
+
+}/*TABLET*/
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url("../imagens/back-pc.jpg");
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #pc {display: block;}
+    #print {display: none;}
+    #tv {display: none;}
+}/*DESKTOP*/
+
+@media screen and (min-width: 1200px ) {
+    body {
+        background-image: url("../imagens/back-tv.jpg");
+    }
+    main {
+        width: 700px;
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #pc {display: none;}
+    #print {display: none;}
+    #tv {display: block;}
+    
+}/*TELA GRANDE*/
